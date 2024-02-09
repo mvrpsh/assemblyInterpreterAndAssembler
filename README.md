@@ -1,2 +1,2 @@
-# assemblyInterpreterAndAssembler
-Interpreter and assembler for pseudo-Assembly (x86_64)
+# Interpreter and Assembler for pseudo-Assembly (x86_64)
+In C++, I have coded an interpreter and assembler for pseudo-Assembly. I implemented 2 passes inside the assembler to first parse out any comments, and then to allocate memory for each label and to write to an intermediate file to represent such commands. The second pass involves reading that temporary file and translating and encoding those generated commands into a machine code program on a stack. In general, the assembler would have to have to encode the opcode, address, and label address in a data structure so that one can derive these fields later on. In terms of the interpreter, I have coded the program to retrieve the instruction from the stack, break down the operator and operand, and then executing the program whilst making sure that the program counter is kept in the instruction pointer.
